@@ -1,13 +1,83 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bilingual Interactive Learning Dashboard</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
-</html>
+Here’s your **step-by-step GitHub Pages upload walkthrough**, aligned with your dashboard UX expectations, plus an automation template for Week 2:
+
+---
+
+### 🚀 Step 1 – Prepare the File
+- Ensure the file is named exactly: **`index.html`**
+- GitHub Pages will serve this as the homepage.
+
+---
+
+### 🌐 Step 2 – Create a GitHub Repository
+1. Log in to [GitHub](https://github.com).
+2. Click the **➕ New** button → create a repository.
+3. Name it something like: `taylor-swift-quiz`.
+4. Choose **Public**.
+5. Click **Create Repository**.
+
+---
+
+### 📂 Step 3 – Upload Your Quiz
+1. Inside the repo, click **Add file → Upload files**.
+2. Drag and drop your `index.html` file.
+3. Commit the changes.
+
+---
+
+### ⚙️ Step 4 – Enable GitHub Pages
+1. Go to your repo → **Settings** tab.
+2. Scroll to **Pages** (left sidebar).
+3. Under *Source*, choose:
+   - Branch: `main`
+   - Folder: `/ (root)`
+4. Save.
+
+---
+
+### 🌍 Step 5 – Access Your Quiz
+- Wait ~2 minutes for GitHub Pages to build.
+- Your quiz will be live at:
+  ```
+  https://<your-username>.github.io/taylor-swift-quiz/
+  ```
+
+---
+
+### 📊 Step 6 – Collect Progress Data
+- Your daughter plays the quiz in the browser.
+- Click **📥 Download Progress (CSV)** to save results.
+- CSV contains per-subject + overall scores.
+- You can merge weekly CSVs into a progress journal.
+
+---
+
+## ⚡ Week 2 Automation Template
+
+To streamline future quizzes:
+1. **Create a folder structure in the repo:**
+   ```
+   /week1/index.html
+   /week2/index.html
+   /week3/index.html
+   ...
+   ```
+2. Keep one **main dashboard (`index.html`)** at root with links:
+   ```html
+   <ul>
+     <li><a href="/week1/index.html">Week 1 – Taylor Swift Era ✨</a></li>
+     <li><a href="/week2/index.html">Week 2 – K-Pop Demon Hunters ⚔️</a></li>
+     <li><a href="/week3/index.html">Week 3 – Labubu Forest 🌲</a></li>
+   </ul>
+   ```
+3. For each new week:
+   - Drop in the generated `index.html` inside `/weekX/`.
+   - Add a link to the root dashboard.
+
+This way, GitHub Pages auto-publishes **all weeks in one site** — no need to create separate repos.
+
+---
+
+✅ Benefits:
+- One-click publishing (just upload the new week’s file).
+- Central dashboard to navigate between weeks.
+- Consistent UX, data tracking, and CSV downloads across all weeks.
