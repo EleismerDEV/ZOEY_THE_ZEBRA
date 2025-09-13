@@ -1,83 +1,86 @@
-Here’s your **step-by-step GitHub Pages upload walkthrough**, aligned with your dashboard UX expectations, plus an automation template for Week 2:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Learning Dashboard – Taylor Swift Era ✨</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #f9d6f9, #d6e0f9);
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #b565d9;
+      color: white;
+      text-align: center;
+      padding: 1.5em;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+    header p {
+      margin: 5px 0 0;
+    }
+    section {
+      max-width: 800px;
+      margin: 30px auto;
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #b565d9;
+      margin-top: 0;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    ul li {
+      margin: 12px 0;
+    }
+    ul li a {
+      display: block;
+      padding: 12px 16px;
+      background: #f2e6ff;
+      border-radius: 8px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    ul li a:hover {
+      background: #d8b9ff;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9em;
+      color: #555;
+      margin: 40px 0 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>📚 Taylor Swift Learning Adventure Dashboard</h1>
+    <p>Choose your week to begin the journey!</p>
+  </header>
 
----
+  <section>
+    <h2>Available Quizzes</h2>
+    <ul>
+      <li><a href="week1/index.html">✨ Week 1 – Taylor Swift Era</a></li>
+      <li><a href="week2/index.html">⚔️ Week 2 – K-Pop Demon Hunters</a></li>
+      <li><a href="week3/index.html">🌲 Week 3 – Labubu Forest</a></li>
+    </ul>
+  </section>
 
-### 🚀 Step 1 – Prepare the File
-- Ensure the file is named exactly: **`index.html`**
-- GitHub Pages will serve this as the homepage.
-
----
-
-### 🌐 Step 2 – Create a GitHub Repository
-1. Log in to [GitHub](https://github.com).
-2. Click the **➕ New** button → create a repository.
-3. Name it something like: `taylor-swift-quiz`.
-4. Choose **Public**.
-5. Click **Create Repository**.
-
----
-
-### 📂 Step 3 – Upload Your Quiz
-1. Inside the repo, click **Add file → Upload files**.
-2. Drag and drop your `index.html` file.
-3. Commit the changes.
-
----
-
-### ⚙️ Step 4 – Enable GitHub Pages
-1. Go to your repo → **Settings** tab.
-2. Scroll to **Pages** (left sidebar).
-3. Under *Source*, choose:
-   - Branch: `main`
-   - Folder: `/ (root)`
-4. Save.
-
----
-
-### 🌍 Step 5 – Access Your Quiz
-- Wait ~2 minutes for GitHub Pages to build.
-- Your quiz will be live at:
-  ```
-  https://<your-username>.github.io/taylor-swift-quiz/
-  ```
-
----
-
-### 📊 Step 6 – Collect Progress Data
-- Your daughter plays the quiz in the browser.
-- Click **📥 Download Progress (CSV)** to save results.
-- CSV contains per-subject + overall scores.
-- You can merge weekly CSVs into a progress journal.
-
----
-
-## ⚡ Week 2 Automation Template
-
-To streamline future quizzes:
-1. **Create a folder structure in the repo:**
-   ```
-   /week1/index.html
-   /week2/index.html
-   /week3/index.html
-   ...
-   ```
-2. Keep one **main dashboard (`index.html`)** at root with links:
-   ```html
-   <ul>
-     <li><a href="/week1/index.html">Week 1 – Taylor Swift Era ✨</a></li>
-     <li><a href="/week2/index.html">Week 2 – K-Pop Demon Hunters ⚔️</a></li>
-     <li><a href="/week3/index.html">Week 3 – Labubu Forest 🌲</a></li>
-   </ul>
-   ```
-3. For each new week:
-   - Drop in the generated `index.html` inside `/weekX/`.
-   - Add a link to the root dashboard.
-
-This way, GitHub Pages auto-publishes **all weeks in one site** — no need to create separate repos.
-
----
-
-✅ Benefits:
-- One-click publishing (just upload the new week’s file).
-- Central dashboard to navigate between weeks.
-- Consistent UX, data tracking, and CSV downloads across all weeks.
+  <footer>
+    <p>Made with ❤️ for your learning journey</p>
+  </footer>
+</body>
+</html>
